@@ -1,0 +1,11 @@
+let positionLat = 1;
+let positionLong = 2;
+let addressLat = 10;
+let addressLong = 11;
+let distanceLat = addressLat - positionLat;
+let distanceLong = addressLong - positionLong;
+let distanceLatk = distanceLat * distanceLat;
+let distanceLongk = distanceLong * distanceLong;
+let distanceLatLong = distanceLatk + distanceLongk;
+let distanceFinal = distanceLatLong ** 0.5;
+console.log(distanceFinal);
