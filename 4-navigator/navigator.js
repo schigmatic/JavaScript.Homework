@@ -1,7 +1,7 @@
-let positionLat = 1;
+let positionLat = 5;
 let positionLong = 2;
 let addressLat = 10;
-let addressLong = 11;
+let addressLong = 16;
 let distanceLat = addressLat - positionLat;
 let distanceLong = addressLong - positionLong;
 let distanceLatk = distanceLat * distanceLat;
