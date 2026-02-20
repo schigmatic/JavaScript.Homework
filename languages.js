@@ -1,4 +1,4 @@
-const lang = "ru";
+const lang = prompt("Введите язык");
 switch (lang) {
   case "ru":
     console.log("Добрый день!");
