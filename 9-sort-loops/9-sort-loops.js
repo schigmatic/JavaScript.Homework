@@ -1,17 +1,17 @@
 const arr = [1, 40, -5, 10, 0];
-function sortEven(arr) {
-  const result = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-      result.push(arr[i]);
+
+function bubbleSort(array) {
+  for (let i = 0; i < array.length - 1; i++) {
+    for (let j = 0; j < array.length - 1 - i; j++) {
+      if (array[j] > array[j + 1]) {
+        // Меняем элементы местами
+        let temp = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = temp;
+      }
     }
   }
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 !== 0) {
-      result.push(arr[i]);
-    }
-  }
-  return result;
+  return array;
 }
-const sortedArr = sortEven(arr);
-console.log(sortedArr);
+
+console.log(bubbleSort(arr));
